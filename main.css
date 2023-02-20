@@ -1,0 +1,262 @@
+main{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    font-family: "OpenSans";
+    color: #636466;
+    max-width: 1280px;
+}
+section{
+    border-radius: 15px;
+    margin: 2%;
+}
+.left{
+    width: 33%;
+    background-image: url(./img/left_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right{
+    width: 67%;
+    background-image: url(./img/right_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.left .photo{
+    background-image: url(./img/left_background.png);
+    background-size: cover;
+}
+.left .photo img{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#name{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-size: 60px;
+    font-weight: 1;
+    font-family: "Bebas_Neue";
+    text-align: center;
+    color: #0084c7;
+    letter-spacing: 7px;  
+}
+@media (max-width: 980px){
+    h2 {
+        font-size:20px ; 
+    }
+    #name{
+        font-size: 45px;
+    }
+    main{
+        width: 90%;
+    }
+}
+@media (max-width:740px){
+    main{
+        flex-direction: column;
+    }
+    .left{
+        width: 80%;
+        margin: auto;
+    }
+    .right{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@font-face {
+    font-family: "Bebas_Neue";
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+        font-family: "OpenSans";
+        src: url(./fonts/OpenSans-VariableFont_wdth.ttf);
+    }
+
+main .left .photo p{
+    display: flex;  
+    width: 100%;  
+    justify-content: center;
+    font-size: 18px;
+    margin-top:0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "OpenSans";
+    letter-spacing: 3px;
+    line-height: 100%;
+    color: #414142;
+}
+.left h2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #414142;
+    font-family: "OpenSans";
+    margin: 10% 0 10% 0;
+    font-size: 20px;
+}
+main section div{
+    width: 100%;
+}
+main section div img{
+    width: 85%;
+    display: flex;
+    margin: auto;
+}
+main .left div div img{
+    width: 9%;
+    position: relative;
+    bottom: 2px;
+    border-radius: 10px;
+}
+.description{
+    width: 75%;
+    display: flex;
+    margin:auto;
+    padding-top: 5%;
+    font-size: 14px;
+    text-align: justify;
+}
+.left div .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    text-align: center;
+}
+.left div .contact p{
+    display: flex;
+    margin: 0;
+    padding-bottom: 5%;
+}
+h3{
+    display: flex;
+    margin: 0;
+    padding-top: 5%;
+}
+.left div .hobby{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: center;
+}
+.left div .hobby img{
+    display: flex;
+    border-radius: 0;
+    width: 40%;
+}
+.left div .hobby div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.left div .hobby div{
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    box-sizing: border-box;
+}
+.right div{
+    width: 85%;
+    margin: auto;
+}
+.right .work h2{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10% 0 5% 0;
+}
+.right .work img{
+    width: 100%;
+}
+.right .work div img{
+    width: 7%;
+    position: relative;
+    bottom: 2.5px;
+    left: -9%;
+    border-radius: 10px;
+    margin: 0;
+}
+.right .work .experience{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.right .work .experience .place{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+.right .work .experience .place .position{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    width: 30%;
+    padding-right: 20px;
+}
+.right .work .experience .place .description{
+    width: 70%;
+    flex-direction: column;
+    padding-top: 0;
+}
+.right .experience .place h3{
+    padding: 0;
+    font-size: 16px;
+}
+.right .work .experience .place p{
+    margin-top: 5px;
+    display: flex;
+}
+.right .work .person{
+    flex-direction: row-reverse;
+    padding-bottom: 60px;
+    width: 100%;
+}
+.right .work .person p{
+    display: flex;
+    width: 90%;
+    margin: 0;
+}
+.right .work{
+    display: flex;
+    flex-direction: column;
+}
+.right .experience{
+    display: flex;
+}
+.right .experience .place{
+    display: flex;
+}
+@media (max-width: 450px){
+    .place{
+        flex-direction: column;
+    }
+    .right .work .experience .place .position{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 535px){
+    .right .work div img{
+        bottom: 1px;
+    }
+}

@@ -215,7 +215,10 @@ h3{
     width: 70%;
     flex-direction: column;
     padding-top: 0;
+    font-size: 16px;
 }
+
+
 .right .experience .place h3{
     padding: 0;
     font-size: 16px;
